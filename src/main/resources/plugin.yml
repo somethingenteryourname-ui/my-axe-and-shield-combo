@@ -1,0 +1,37 @@
+name: AegisTitan
+version: '${project.version}'
+main: dev.aegistitan.AegisTitan
+api-version: '1.21'
+description: The Aegis Wall Shield and the Titan Cleaver.
+
+commands:
+  getshield:
+    description: Get the Aegis Wall Shield.
+    usage: /getshield [player]
+    permission: aegistitan.shield
+  shieldsize:
+    description: Choose how big your shield wall is.
+    usage: /shieldsize <width> <height>  or  /shieldsize <small|medium|large|huge|massive>
+    permission: aegistitan.size
+  getaxe:
+    description: Get the Titan Cleaver.
+    usage: /getaxe [player]
+    permission: aegistitan.axe
+  aegistitan:
+    description: Reload the AegisTitan config.
+    usage: /aegistitan reload
+    permission: aegistitan.admin
+
+permissions:
+  aegistitan.shield:
+    description: Use /getshield
+    default: op
+  aegistitan.axe:
+    description: Use /getaxe
+    default: op
+  aegistitan.size:
+    description: Use /shieldsize
+    default: true
+  aegistitan.admin:
+    description: Give items to other players and reload the config
+    default: op

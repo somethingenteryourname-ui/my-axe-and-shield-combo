@@ -1,0 +1,39 @@
+# ============================================
+#  AegisTitan config
+#  Use /aegistitan reload after editing.
+# ============================================
+
+shield:
+  # Wall size (in blocks) for players who never used /shieldsize
+  default-width: 14
+  default-height: 10
+  # Limits for /shieldsize
+  min-size: 3
+  max-width: 40
+  max-height: 24
+  # How far in front of the player the wall appears
+  distance: 3.0
+  # How long the shield stays disabled after the Titan Cleaver cuts it
+  disabled-seconds: 8
+  # Bounce arrows/tridents/fireballs back off the wall
+  reflect-projectiles: true
+
+axe:
+  # Cooldown for the shift + right click Titan Slam
+  cooldown-seconds: 15
+  # How far away you can aim the slam
+  range: 30
+  # Size of the shockwave
+  shockwave-radius: 10
+  # Damage at the center of the shockwave / at the edge (2 = one heart)
+  max-damage: 12
+  min-damage: 4
+  knockback: 1.6
+  # A shield wall this close to the impact gets cut in half
+  shield-cut-radius: 7
+  # Carve a cracked trench into the ground where the axe lands
+  crater: true
+  # Seconds before the ground repairs itself (0 = the crater stays forever)
+  crater-restore-seconds: 30
+  # Fling chunks of the ground into the air with the shockwave
+  flying-debris: true
